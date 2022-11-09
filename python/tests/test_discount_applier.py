@@ -4,7 +4,7 @@ class NotifierMock:
     def __init__(self):
         self.messages = []
 
-    def notify(self, message):
+    def notify(self, user, message):
         self.messages.append(message)
 
 def test_apply_v1():
